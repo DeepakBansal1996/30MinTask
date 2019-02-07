@@ -1,0 +1,54 @@
+*{box-sizing: border-box;}
+
+body{
+	background-image: url(download.jpg);
+	background-size:cover;
+
+}
+.parrent{
+      width: 300px;
+      overflow: hidden;
+      margin:50px auto 0 auto;
+}
+
+.parrent .box{
+	float: left;
+	width: 100px;
+	height: 100px;
+	transition: all .25s ease-in-out;
+	font-family: sans-serif;
+	font-size: 80px;
+	cursor: pointer;
+	line-height: 100px;
+	border-radius: 5px;
+
+}
+
+.parrent .box:hover{
+	background: rgba(10,10,10,0.8);
+	color: white;
+}
+
+#play{
+	background-color: blue;
+	color: white;
+	font-weight: bolder;
+	border-radius: 5px;
+	border: 1px yellow;
+	cursor: pointer;
+	width: 180px;
+	height: 40px;
+	font-size: 22px;
+	display: block;
+	margin: 10px auto;
+}
+#h{
+	width:300px;
+	padding-left: 10px;
+	
+	background-color: green;
+	color: white;
+	font-weight: bold;
+	font-family:sans-serif;
+	text-align: center;
+}
