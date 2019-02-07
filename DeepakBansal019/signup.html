@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>new registration</title>
+	
+<link rel="stylesheet" type="text/css" href="style.css">
+		 
+
+  
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+
+            <script type="text/javascript">
+
+            	
+                 
+            	function acc(){
+
+            		var u_name=document.getElementById('userNam').value;
+            	    var name=document.getElementById('nam').value;
+            	    var password=document.getElementById('pass1').value;
+            	    var Confirm_pass=document.getElementById('pass2').value;
+
+                
+                 var dataToSend={
+
+                     "name": name,
+                     "userName": u_name,
+    				 "password": password,
+    				 "score":   0
+    				           };
+               
+                 if(u_name=="" || name=="" || password=="" || Confirm_pass=="")
+                {
+
+                	alert("fields can not be empty");
+                }
+                else if(password.length<5)
+                {
+                	alert("Password must not be less than 5 characters");
+ 
+                }
+                else if(password!=Confirm_pass)
+            	{
+            		alert("password is not match with Confirm Password");
+            	}
+
+                else{
+                   $.ajax(
+                      { 
+                         url : "http://localhost:51910/api/users",
+                         type : 'POST',
+                         data : dataToSend,
+                         datatype : 'json',
+                         success : function(res){
+                         	           
+                                       alert("account has been created");
+
+                                       window.location.href="login.html";
+                                       
+                                          }
+                         }
+                           );
+                         }
+                      }
+                
+            </script>
+
+</head>
+<body>
+	<header>
+		<img src="logo.png" width="215" height="80">
+		<h2 id ="h2">We build smart solutions</h2>
+		
+		
+	
+	</header>
+	<h1 id="hed">Create Your Account</h1>
+	<div class="creatAcc">		
+<form>
+	Name*<br>
+	<input type="text" id="nam" placeholder="Enter Name"><br><br>
+	User Name*<br>
+	<input type="text" id="userNam" placeholder="FirstNameEmployeeNo"><br><br>
+	Password*<br>
+	<input type="Password" id="pass1" placeholder="***********"><br><br>
+	Confirm Password*<br>
+	<input type="Password" id="pass2" placeholder="***********"><br><br><br>
+	<input type="reset" name="" value="Reset">
+	<input type="button" name="" value= "Submit" onclick="acc()">
+</form>
+</div>
+   
+</body>
+</html>

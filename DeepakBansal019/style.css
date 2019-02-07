@@ -1,3 +1,5 @@
+/*css for tic tac toe */ 
+
 *{box-sizing: border-box;}
 
 body{
@@ -52,3 +54,194 @@ body{
 	font-family:sans-serif;
 	text-align: center;
 }
+
+#usrnm{
+	color: white;
+	font-weight: bolder;
+	font-family: sans-serif;
+	background: blue;
+	width: 50px;
+	height: 20px;
+	
+}
+ .win{background: #F9690E; color: #fff}
+
+/*css for login*/
+
+    
+
+		#h2{
+			float:right;
+			color:white;
+			margin-right:250px;
+		}
+		#h3{
+
+			float:left;
+        	font-size:28px; 
+        	margin-top: 15px;
+            margin-left: 5%;
+        	color: white;
+        	font-weight: bold;
+        	text-decoration:none;
+		
+		}
+
+		a{
+                
+			float:right;
+        	font-size:28px; 
+        	margin-top: 15px;
+        	margin-right: 7%;
+        	color: white;
+        	font-weight: bold;
+        	text-decoration:none;
+		}
+		a:hover{
+			background-color: orange;
+		}
+		.log{
+			width:40%;
+			height:400px;
+			margin-left:350px;
+			margin-top:20px;
+			font-size:30px;
+			font-weight:bolder;
+			font-style:sans-serif;
+			color:white;
+			background-color:rgba(0,0,0,0.5);
+			padding-left:150px;
+			border-radius:10px;
+			padding-top:10px;
+		}
+		.log input[type='text']
+		{
+			width:250px;
+			height:30px;
+			border-radius:5px;
+			padding-left:8px;		
+		}
+		.log input[type='password']
+		{
+			width:250px;
+			height:30px;
+			border-radius:5px;
+			padding-left:8px;
+		}
+		.log input[type='button']
+		{
+			width:120px;
+			height:30px;
+			border-radius:5px;
+			background-color:green;
+			color:white;
+			font-weight:bolder;
+			border:none;
+		}
+		#hh3{
+            position:absolute;
+            left:430px;
+            top:100px;
+            color: white;
+           }
+		.log input[type='button']:hover{
+			width:123px;
+			height:35px;
+			background-color:red;
+		}
+		
+		header{
+			background-color:rgba(0,0,0,0.8);
+			width:100.5%;
+			height:80px;
+			margin-right:0;
+			padding-right:-1px;
+		}
+        
+        #link{
+        	font-size:20px;
+        	
+        	font-family: sans-serif;
+        	color:white; 
+        }
+		
+/* css for signeup */
+
+
+		
+		.creatAcc{
+            width:60%;
+  			height:390px;
+			margin-left:500px;
+			margin-top:10px;
+			font-size:20px;
+			font-weight:bolder;
+			font-style:sans-serif;
+			color:white;
+		}
+		.creatAcc input[type='text']
+		{
+			width:250px;
+			height:30px;
+			border-radius:5px;
+			padding-left:8px;
+		}
+		.creatAcc input[type='text']
+		{
+			width:250px;
+			height:30px;
+			border-radius:5px;
+			padding-left:8px;
+		}
+		.creatAcc input[type='password']
+		{
+			width:250px;
+			height:30px;
+			border-radius:5px;
+			padding-left:8px;
+		}
+		.creatAcc input[type='reset']
+		{
+			width:100px;
+			height:30px;
+			border-radius:5px;
+			background-color:red;
+			color: white;
+			font-weight:bolder;
+			border:none;
+		}
+		.creatAcc input[type='button']
+		{
+			width:100px;
+			height:30px;
+			border-radius:5px;
+			background-color:green;
+			color:white;
+			font-weight:bolder;
+			border:none;
+		}
+		#hed{
+              font-size:50px;
+			font-weight:bolder;
+			font-style:sans-serif;
+			color:white;
+			margin-top:1px;
+			margin-left:400px;
+		}
+		
+		.creatAcc input[type='reset']:hover{
+			width:102px;
+			height:32px; 
+		}
+        .creatAcc input[type='button']:hover{
+			width:102px;
+			height:32px; 
+		}
+	    
+        .creatAcc input[type='text']:hover{
+        	width: 253; 
+        	height:33;
+        }
+
+        
+
