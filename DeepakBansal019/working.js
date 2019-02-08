@@ -136,7 +136,7 @@ function reset(){
 	for(var i=0;i<boxs.length;i++){
 		boxs[i].classList.remove("win");
 	
-		
+		boxs[i].innerHTML="";
 		t.innerHTML="play Again"
 	}
 }
